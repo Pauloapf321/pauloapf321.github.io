@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        list-style: none;
+        text-decoration: none;
+    }
+  
+
+    header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(8, 8, 8);
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    li {
+        list-style: none;
+        color: aliceblue;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: .5s;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    li:hover {
+        color: #d21617;
+    }
+
+    #logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .cards-content {
+        padding-top: 20px;
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        row-gap: 40px;
+        column-gap: 20px;
+        justify-content: center;
+    }  
+
+    .card {
+        width: 90%;
+        height: 600px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+    }
+    
+    .card:hover {
+    transform: scale(1.02);
+    }
+
+    .imagem-1 {
+        background-image: url('batman5.webp');
+    }
+    
+    .imagem-2 {
+        background-image: url('poster.jpg');
+    }
+    
+    .imagem-3 {
+        background-image: url('mulher\ gato2.jpg');
+    }
+
+    .imagem-4 {
+        background-image: url('pinguim2.jpg');
+    }
+    
+    .imagem-5 {
+        background-image: url('Poster2.jpg');
+    }
+    
+    .imagem-6 {
+        background-image: url('Batman.jpg');
+    }
+
+footer {
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color:#444141;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 12px;
+}
+    
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    @media(max-width: 414px){
+    .footer-navigation {
+    display: block;
+    }
+    
+    nav {
+    display: none;
+    }
+
+    .content {
+    width: 90%;
+    height: auto;
+    }
+
+    .cards-content {
+    grid-template-columns: 1fr;
+
+    }
+}
